@@ -2,7 +2,7 @@
 // Если name передан (например, "Алиса"), вернуть строку: "Привет, Алиса!"
 // Если name равен undefined, вернуть строку: "Привет, Гость!"
 export function greet(name: string | undefined): string {
-  if (name === "Алиса") {
+  if (typeof name === "string") {
     return "Привет, " + name + "!";
   }
   return "Привет, Гость!";
